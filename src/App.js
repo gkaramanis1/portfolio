@@ -6,8 +6,23 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
-import { Box } from '@chakra-ui/react';
+import { Box, useColorMode, IconButton, ColorModeScript } from '@chakra-ui/react';
 import './App.css';
+import { FaSun, FaMoon } from 'react-icons/fa'
+
+function ColorModeSwitcher() {
+  const { colorMode, toggleColorMode } = useColorMode();
+  return (
+    <IconButton
+      aria-label={`Switch to ${colorMode === 'light' ? 'dark' : 'light'} mode`}
+      icon={colorMode === 'light' ? <FaMoon /> : <FaSun />}
+      onClick={toggleColorMode}
+      position="absolute"
+      bottom="3rem"
+      right="1rem"
+    />
+  );
+}
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('About');
@@ -15,7 +30,10 @@ export default function App() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
+    <>
+    <ColorModeScript />
     <ChakraProvider>
+      <ColorModeSwitcher />
       <div>
         <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
         <Box p={8}>
@@ -27,6 +45,7 @@ export default function App() {
         <Footer />
       </div>
     </ChakraProvider>
+    </>
   );
 }
 
