@@ -25,7 +25,7 @@ export default function Resume() {
           fontSize={{ base: "2xl", md: "3xl" }}
           textAlign="center"
         >
-          Skills:
+          Skills
         </Heading>
         <List
           fontSize={{ base: "lg", md: "xl" }}

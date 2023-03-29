@@ -27,16 +27,6 @@ function NavBar({ currentPage, handlePageChange }) {
           Portfolio
         </Tab>
         <Tab
-          onClick={() => handlePageChange('Contact')}
-          _selected={{ color: 'blue.500', borderBottomWidth: '2px', borderColor: 'blue.500' }}
-          color={currentPage === 'Contact' ? 'blue.500' : 'gray.500'}
-          _hover={{ color: 'blue.500' }}
-          borderBottomWidth={currentPage === 'Contact' ? '2px' : ''}
-          borderColor={currentPage === 'Contact' ? 'blue.500' : ''}
-        >
-          Contact Me
-        </Tab>
-        <Tab
           onClick={() => handlePageChange('Resume')}
           _selected={{ color: 'blue.500', borderBottomWidth: '2px', borderColor: 'blue.500' }}
           color={currentPage === 'Resume' ? 'blue.500' : 'gray.500'}
@@ -45,6 +35,16 @@ function NavBar({ currentPage, handlePageChange }) {
           borderColor={currentPage === 'Resume' ? 'blue.500' : ''}
         >
           Resume
+        </Tab>
+        <Tab
+          onClick={() => handlePageChange('Contact')}
+          _selected={{ color: 'blue.500', borderBottomWidth: '2px', borderColor: 'blue.500' }}
+          color={currentPage === 'Contact' ? 'blue.500' : 'gray.500'}
+          _hover={{ color: 'blue.500' }}
+          borderBottomWidth={currentPage === 'Contact' ? '2px' : ''}
+          borderColor={currentPage === 'Contact' ? 'blue.500' : ''}
+        >
+          Contact Me
         </Tab>
       </TabList>
     </Tabs>
