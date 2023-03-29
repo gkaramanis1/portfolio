@@ -27,12 +27,14 @@ export default function Portfolio() {
   }, []);
   return (
     <div
-      style={{
+    style={{
         display: "flex",
         flexDirection: "row",
         flexWrap: "wrap",
         margin: "0 auto",
-        width: "70%",
+        width: "100%",
+        maxWidth: "1200px",
+        justifyContent: "center",
       }}
     >
       <Card

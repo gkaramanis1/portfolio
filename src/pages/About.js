@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Box, Text, Image } from "@chakra-ui/react";
-const profile = require('../assets/profile.png');
+
+const profile = require("../assets/profile.png");
 
 export default function About() {
   const [isMounted, setIsMounted] = useState(false);
@@ -28,7 +29,7 @@ export default function About() {
           fontWeight="extrabold"
           mb={4}
         >
-          Hey! I'm George 
+          Hey! I'm George
         </Text>
         <Box maxWidth="800px" display="inline-block">
           <Image
@@ -54,9 +55,62 @@ export default function About() {
           full-stack web development that emphasizes creativity, collaboration,
           and innovation.
         </p>
+
+        <Box style={{
+          transform: isMounted ? "translateY(0)" : "translateY(100px)",
+          transition: "transform 1s ease-out",
+            }}
+        textAlign="center" mt={10} mb={4}>
+          <Text bgGradient="linear(to-l, #ee6c4d, #98c1d9)"
+          bgClip="text"
+          fontSize="xl"
+          fontWeight="semibold" mb={4}>
+            When I'm not coding
+          </Text>
+          <Box display="flex" flexDirection="column" alignItems="center">
+          <Box display="flex" alignItems="center" mb={2}>
+              <span
+                role="img"
+                aria-label="family"
+                style={{ marginRight: "8px" }}
+              >
+                👨‍👩‍👧‍👦
+              </span>
+              <span>Family</span>
+            </Box>
+            <Box display="flex" alignItems="center" mb={2}>
+              <span
+                role="img"
+                aria-label="running"
+                style={{ marginRight: "8px" }}
+              >
+                🏃
+              </span>
+              <span>Running</span>
+            </Box>
+            <Box display="flex" alignItems="center" mb={2}>
+              <span
+                role="img"
+                aria-label="basketball"
+                style={{ marginRight: "8px" }}
+              >
+                🏀
+              </span>
+              <span>Basketball</span>
+            </Box>
+            <Box display="flex" alignItems="center">
+              <span
+                role="img"
+                aria-label="soccer"
+                style={{ marginRight: "8px" }}
+              >
+                ⚽️
+              </span>
+              <span>Soccer</span>
+            </Box>
+          </Box>
+        </Box>
       </Box>
     </div>
   );
 }
-
-
