@@ -51,7 +51,7 @@ export default function Portfolio() {
             <Heading size="md">Project Management System</Heading>
             <Text>
               This application allows you to manage and organize your GitHub
-              projects! Additionaly, you can collaborate with team memebers and
+              projects! Additionally, you can collaborate with team memebers and
               stay up to date with the current projects you are working on.
             </Text>
           </Stack>

@@ -7,7 +7,9 @@ export default function About() {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    setTimeout(() => {
     setIsMounted(true);
+  }, 500);
   }, []);
 
   return (
