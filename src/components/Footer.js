@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Stack, ButtonGroup, IconButton } from "@chakra-ui/react";
+import { Container, Stack, ButtonGroup, IconButton, Text } from "@chakra-ui/react";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 
 function Footer() {
@@ -16,6 +16,20 @@ function Footer() {
         align="center"
         justify="center"
       >
+        <Stack
+          direction="row"
+          align="center"
+          justify="center"
+        >
+          <Text
+            fontSize={{ base: 'lg', md: 'xl' }}
+            fontWeight="bold"
+            color="gray.500"
+            mr="2"
+          >
+            Connect With Me!
+          </Text>
+        </Stack>
         <ButtonGroup variant="ghost">  
           <IconButton
             as="a"

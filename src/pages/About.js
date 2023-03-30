@@ -29,7 +29,7 @@ export default function About() {
           fontWeight="extrabold"
           mb={4}
         >
-          Hey! I'm George
+          Hey! I'm George Karamanis
         </Text>
         <Box maxWidth="800px" display="inline-block">
           <Image
@@ -65,7 +65,7 @@ export default function About() {
           bgClip="text"
           fontSize="xl"
           fontWeight="semibold" mb={4}>
-            When I'm not coding
+            Some things I enjoy doing when I'm not coding
           </Text>
           <Box display="flex" flexDirection="column" alignItems="center">
           <Box display="flex" alignItems="center" mb={2}>
@@ -76,7 +76,7 @@ export default function About() {
               >
                 👨‍👩‍👧‍👦
               </span>
-              <span>Family</span>
+              <span>Spending time with my Family</span>
             </Box>
             <Box display="flex" alignItems="center" mb={2}>
               <span
@@ -107,6 +107,16 @@ export default function About() {
                 ⚽️
               </span>
               <span>Soccer</span>
+            </Box>
+            <Box display="flex" alignItems="center" mb={2}>
+              <span
+                role="img"
+                aria-label="dog"
+                style={{ marginRight: "8px" }}
+              >
+                🐾
+              </span>
+              <span>Hanging out with my Wheaten Terrier</span>
             </Box>
           </Box>
         </Box>
