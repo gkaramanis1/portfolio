@@ -9,7 +9,7 @@ export default function About() {
   useEffect(() => {
     setTimeout(() => {
     setIsMounted(true);
-  }, 500);
+  }, 200);
   }, []);
 
   return (
