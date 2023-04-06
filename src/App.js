@@ -10,6 +10,7 @@ import { Box, useColorMode, IconButton, ColorModeScript } from '@chakra-ui/react
 import './App.css';
 import { FaSun, FaMoon } from 'react-icons/fa'
 
+// Dark and Light Mode
 function ColorModeSwitcher() {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
