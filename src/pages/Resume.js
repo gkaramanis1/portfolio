@@ -35,12 +35,6 @@ export default function Resume() {
           flexDirection="column"
         >
           <ListItem bg="gray.50" borderRadius="md" p={2} color="black">
-            <FaHtml5 size="1.5em" color="#E34F26" /> HTML
-          </ListItem>
-          <ListItem bg="gray.50" borderRadius="md" p={2} color="black">
-            <FaCss3Alt size="1.5em" color="#1572B6" /> CSS
-          </ListItem>
-          <ListItem bg="gray.50" borderRadius="md" p={2} color="black">
             <FaJsSquare size="1.5em" color="#F7DF1E" /> JavaScript
           </ListItem>
           <ListItem bg="gray.50" borderRadius="md" p={2} color="black">
@@ -61,9 +55,15 @@ export default function Resume() {
           <ListItem bg="gray.50" borderRadius="md" p={2} color="black">
             <SiMongodb size="1.5em" color="#3FA037" /> MongoDB
           </ListItem>
+          <ListItem bg="gray.50" borderRadius="md" p={2} color="black">
+            <FaHtml5 size="1.5em" color="#E34F26" /> HTML
+          </ListItem>
+          <ListItem bg="gray.50" borderRadius="md" p={2} color="black">
+            <FaCss3Alt size="1.5em" color="#1572B6" /> CSS
+          </ListItem>
         </List>
         <Center mt={10}>
-          <a href={require("../assets/resume.pdf")} download style={{ textDecoration: "none" }}>
+          <a href={require("../assets/resume1.pdf")} download style={{ textDecoration: "none" }}>
             <Heading
               as="h3"
               fontSize={{ base: "lg", md: "xl" }} display="inline-flex" alignItems="center">
