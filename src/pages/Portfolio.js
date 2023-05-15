@@ -23,6 +23,13 @@ export default function Portfolio() {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    setTimeout(() => {
+      setIsMounted(true);
+      window.scrollTo(0, 0);
+    }, 200);
+  }, []);
+
+  useEffect(() => {
     setIsMounted(true);
   }, []);
   return (
@@ -40,7 +47,8 @@ export default function Portfolio() {
       <Card
         style={{
           transform: isMounted ? "translateY(0)" : "translateY(100px)",
-          transition: "transform 1s ease-out",
+          transition: "transform 2s ease-out, opacity 2s ease-out",
+          transitionDelay: "0.2s"
         }}
         maxW="sm"
         m="2"
@@ -78,7 +86,8 @@ export default function Portfolio() {
       <Card
         style={{
           transform: isMounted ? "translateY(0)" : "translateY(100px)",
-          transition: "transform 1s ease-out",
+          transition: "transform 2s ease-out, opacity 2s ease-out",
+          transitionDelay: "0.5s"
         }}
         maxW="sm"
         m="2"
@@ -112,7 +121,8 @@ export default function Portfolio() {
       <Card
         style={{
           transform: isMounted ? "translateY(0)" : "translateY(100px)",
-          transition: "transform 1s ease-out",
+          transition: "transform 2s ease-out, opacity 2s ease-out",
+          transitionDelay: "0.8s"
         }}
         maxW="sm"
         m="2"

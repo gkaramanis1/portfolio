@@ -1,54 +1,74 @@
 import { useState, useEffect } from "react";
 import { Box, Text, Image } from "@chakra-ui/react";
 
-const profile = require("../assets/profile1.jpeg");
+const profile = require("../assets/profile3.png");
 
 export default function About() {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
-    setIsMounted(true);
-  }, 200);
+      setIsMounted(true);
+      window.scrollTo(0, 0);
+    }, 200);
   }, []);
 
   return (
     <div style={{ textAlign: "center" }}>
       <Box
-        maxWidth="800px"
-        display="inline-block"
-        mt={8}
-        mb={8}
-        style={{
-          transform: isMounted ? "translateY(0)" : "translateY(100px)",
-          transition: "transform 1s ease-out",
-        }}
-      >
-        <Text
-          bgGradient="linear(to-l, #ee6c4d, #98c1d9)"
-          bgClip="text"
-          fontSize="5xl"
-          fontWeight="extrabold"
-          mb={4}
-        >
-          Hey! I'm George Karamanis
-        </Text>
-        <Box maxWidth="800px" display="inline-block">
-          <Image
-            borderRadius="full"
-            boxSize="300px"
-            src={profile}
-            alt="George Karamanis"
-            mb={6}
-          />
-        </Box>
+  maxWidth="800px"
+  display="inline-block"
+  mt={8}
+  mb={8}
+  style={{
+    transform: isMounted ? "translateY(0)" : "translateY(100%)",
+    opacity: isMounted ? 1 : 0,
+    transition: "transform 2s ease-out, opacity 2s ease-out",
+    transitionDelay: "0.2s"
+  }}
+>
+  <Text
+    bgGradient="linear(to-l, #ee6c4d, #98c1d9)"
+    bgClip="text"
+    fontSize="5xl"
+    fontWeight="extrabold"
+    mb={4}
+    style={{
+      opacity: isMounted ? 1 : 0,
+      transition: "transform 2s ease-out, opacity 2s ease-out",
+      transitionDelay: "0.5s"
+    }}
+  >
+    Hey! I'm George Karamanis
+  </Text>
+  <Box maxWidth="800px" display="inline-block"
+    style={{
+      opacity: isMounted ? 1 : 0,
+      transition: "transform 2s ease-out, opacity 2s ease-out",
+      transitionDelay: "0.8s"
+    }}
+  >
+    <Image
+  borderRadius="5px"
+  boxSize="250px"
+  src={profile}
+  alt="George Karamanis"
+  mb={6}
+  objectFit="cover"
+  objectPosition="center"
+  style={{ maxWidth: "100%", height: "auto" }}
+/>
+
+  </Box>
+
         <p
           className="bio"
           mt={4}
           style={{
             opacity: isMounted ? 1 : 0,
             transform: isMounted ? "translateY(0)" : "translateY(50px)",
-            transition: "opacity 1s ease-out, transform 1s ease-out",
+            transition: "opacity 2s ease-out, transform 2s ease-out",
+            transitionDelay: "1.1s"
           }}
         >
           I'm a problem-solver at heart who thrives in team-oriented
@@ -60,7 +80,8 @@ export default function About() {
 
         <Box style={{
           transform: isMounted ? "translateY(0)" : "translateY(100px)",
-          transition: "transform 1s ease-out",
+          transition: "transform 2s ease-out, opacity 2s ease-out",
+          transitionDelay: "0.8s"
             }}
         textAlign="center" mt={10} mb={4}>
           <Text bgGradient="linear(to-l, #ee6c4d, #98c1d9)"

@@ -19,7 +19,7 @@ function ColorModeSwitcher() {
       icon={colorMode === 'light' ? <FaMoon /> : <FaSun />}
       onClick={toggleColorMode}
       position="absolute"
-      bottom="3rem"
+      top="0.5rem"
       right="1rem"
     />
   );

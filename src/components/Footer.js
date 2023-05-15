@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Stack, ButtonGroup, IconButton, Text } from "@chakra-ui/react";
-import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -43,12 +43,7 @@ function Footer() {
             aria-label="GitHub"
             icon={<FaGithub fontSize="2rem" color="0077b6"/>}
           />
-          <IconButton
-            as="a"
-            href="https://www.instagram.com/giorgokaramanis/"
-            aria-label="Instagram"
-            icon={<FaInstagram fontSize="2rem" color="0077b6" />}
-          />
+          
         </ButtonGroup>
       </Stack>
     </Container>
