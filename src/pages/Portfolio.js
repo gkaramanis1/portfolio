@@ -47,8 +47,9 @@ export default function Portfolio() {
       <Card
         style={{
           transform: isMounted ? "translateY(0)" : "translateY(100px)",
+          opacity: isMounted ? 1 : 0,
           transition: "transform 2s ease-out, opacity 2s ease-out",
-          transitionDelay: "0.2s"
+          transitionDelay: "0.2s",
         }}
         maxW="sm"
         m="2"
@@ -86,8 +87,9 @@ export default function Portfolio() {
       <Card
         style={{
           transform: isMounted ? "translateY(0)" : "translateY(100px)",
+          opacity: isMounted ? 1 : 0,
           transition: "transform 2s ease-out, opacity 2s ease-out",
-          transitionDelay: "0.5s"
+          transitionDelay: "0.5s",
         }}
         maxW="sm"
         m="2"
@@ -121,8 +123,9 @@ export default function Portfolio() {
       <Card
         style={{
           transform: isMounted ? "translateY(0)" : "translateY(100px)",
+          opacity: isMounted ? 1 : 0,
           transition: "transform 2s ease-out, opacity 2s ease-out",
-          transitionDelay: "0.8s"
+          transitionDelay: "0.8s",
         }}
         maxW="sm"
         m="2"

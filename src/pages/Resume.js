@@ -39,72 +39,92 @@ export default function Resume() {
           flexDirection="column"
         >
           <ListItem style={{
-          transform: isMounted ? "translateY(0)" : "translateY(100%)",
-          transition: "transform 2s ease-out, opacity 2s ease-out",
-          transitionDelay: "0.2s"}}
+    transform: isMounted ? "translateY(0)" : "translateY(100px)",
+    opacity: isMounted ? 1 : 0,
+    transition: "transform 2s ease-out, opacity 2s ease-out",
+    transitionDelay: "0.2s",
+  }}
           bg="gray.50" borderRadius="md" p={2} color="black">
             <FaJsSquare size="1.5em" color="#F7DF1E" /> JavaScript
           </ListItem>
           <ListItem style={{
-          transform: isMounted ? "translateY(0)" : "translateY(100%)",
-          transition: "transform 2s ease-out, opacity 2s ease-out",
-          transitionDelay: "0.5s"}}
+    transform: isMounted ? "translateY(0)" : "translateY(100px)",
+    opacity: isMounted ? 1 : 0,
+    transition: "transform 2s ease-out, opacity 2s ease-out",
+    transitionDelay: "0.5s",
+  }}
            bg="gray.50" borderRadius="md" p={2} color="black">
             <FaPython size="1.5em" color="#3776AB" /> Python
           </ListItem>
           <ListItem style={{
-          transform: isMounted ? "translateY(0)" : "translateY(100%)",
-          transition: "transform 2s ease-out, opacity 2s ease-out",
-          transitionDelay: "0.8s"}}
+    transform: isMounted ? "translateY(0)" : "translateY(100px)",
+    opacity: isMounted ? 1 : 0,
+    transition: "transform 2s ease-out, opacity 2s ease-out",
+    transitionDelay: "0.8s",
+  }}
            bg="gray.50" borderRadius="md" p={2} color="black">
             <FaReact size="1.5em" color="#61DAFB" /> ReactJS
           </ListItem>
           <ListItem style={{
-          transform: isMounted ? "translateY(0)" : "translateY(100%)",
-          transition: "transform 2s ease-out, opacity 2s ease-out",
-          transitionDelay: "1.1s"}}
+    transform: isMounted ? "translateY(0)" : "translateY(100px)",
+    opacity: isMounted ? 1 : 0,
+    transition: "transform 2s ease-out, opacity 2s ease-out",
+    transitionDelay: "1.1s",
+  }}
            bg="gray.50" borderRadius="md" p={2} color="black">
             <FaNodeJs size="1.5em" color="#339933" /> NodeJS
           </ListItem>
           <ListItem style={{
-          transform: isMounted ? "translateY(0)" : "translateY(100%)",
-          transition: "transform 2s ease-out, opacity 2s ease-out",
-          transitionDelay: "1.4s"}}
+    transform: isMounted ? "translateY(0)" : "translateY(100px)",
+    opacity: isMounted ? 1 : 0,
+    transition: "transform 2s ease-out, opacity 2s ease-out",
+    transitionDelay: "1.4s",
+  }}
            bg="gray.50" borderRadius="md" p={2} color="black">
             <SiExpress size="1.5em" color="#333" /> Express
           </ListItem>
           <ListItem style={{
-          transform: isMounted ? "translateY(0)" : "translateY(100%)",
-          transition: "transform 2s ease-out, opacity 2s ease-out",
-          transitionDelay: "1.7s"}}
+    transform: isMounted ? "translateY(0)" : "translateY(100px)",
+    opacity: isMounted ? 1 : 0,
+    transition: "transform 2s ease-out, opacity 2s ease-out",
+    transitionDelay: "1.7s",
+  }}
            bg="gray.50" borderRadius="md" p={2} color="black">
             <FaGitAlt size="1.5em" color="#F05032" /> Git
           </ListItem>
           <ListItem style={{
-          transform: isMounted ? "translateY(0)" : "translateY(100%)",
-          transition: "transform 2s ease-out, opacity 2s ease-out",
-          transitionDelay: "2s"}}
+    transform: isMounted ? "translateY(0)" : "translateY(100px)",
+    opacity: isMounted ? 1 : 0,
+    transition: "transform 2s ease-out, opacity 2s ease-out",
+    transitionDelay: "2.0s",
+  }}
            bg="gray.50" borderRadius="md" p={2} color="black">
             <FaDatabase size="1.5em" color="#4479A1" /> MySQL
           </ListItem>
           <ListItem style={{
-          transform: isMounted ? "translateY(0)" : "translateY(100%)",
-          transition: "transform 2s ease-out, opacity 2s ease-out",
-          transitionDelay: "2.3s"}}
+    transform: isMounted ? "translateY(0)" : "translateY(100px)",
+    opacity: isMounted ? 1 : 0,
+    transition: "transform 2s ease-out, opacity 2s ease-out",
+    transitionDelay: "2.3s",
+  }}
            bg="gray.50" borderRadius="md" p={2} color="black">
             <SiMongodb size="1.5em" color="#3FA037" /> MongoDB
           </ListItem>
           <ListItem style={{
-          transform: isMounted ? "translateY(0)" : "translateY(100%)",
-          transition: "transform 2s ease-out, opacity 2s ease-out",
-          transitionDelay: "2.6s"}}
+    transform: isMounted ? "translateY(0)" : "translateY(100px)",
+    opacity: isMounted ? 1 : 0,
+    transition: "transform 2s ease-out, opacity 2s ease-out",
+    transitionDelay: "2.6s",
+  }}
            bg="gray.50" borderRadius="md" p={2} color="black">
             <FaHtml5 size="1.5em" color="#E34F26" /> HTML
           </ListItem>
           <ListItem style={{
-          transform: isMounted ? "translateY(0)" : "translateY(100%)",
-          transition: "transform 2s ease-out, opacity 2s ease-out",
-          transitionDelay: "2.9s"}}
+    transform: isMounted ? "translateY(0)" : "translateY(100px)",
+    opacity: isMounted ? 1 : 0,
+    transition: "transform 2s ease-out, opacity 2s ease-out",
+    transitionDelay: "2.9s",
+  }}
            bg="gray.50" borderRadius="md" p={2} color="black">
             <FaCss3Alt size="1.5em" color="#1572B6" /> CSS
           </ListItem>
