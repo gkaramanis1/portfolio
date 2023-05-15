@@ -11,19 +11,6 @@ import './App.css';
 import { FaSun, FaMoon } from 'react-icons/fa'
 
 // Dark and Light Mode
-function ColorModeSwitcher() {
-  const { colorMode, toggleColorMode } = useColorMode();
-  return (
-    <IconButton
-      aria-label={`Switch to ${colorMode === 'light' ? 'dark' : 'light'} mode`}
-      icon={colorMode === 'light' ? <FaMoon /> : <FaSun />}
-      onClick={toggleColorMode}
-      position="absolute"
-      bottom="3rem"
-      right="1rem"
-    />
-  );
-}
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('About');
@@ -34,7 +21,7 @@ export default function App() {
     <>
     <ColorModeScript />
     <ChakraProvider>
-      <ColorModeSwitcher />
+      
       <div>
         <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
         <Box p={8}>

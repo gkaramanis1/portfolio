@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Box, Text, Image } from "@chakra-ui/react";
 
-const profile = require("../assets/profile3.png");
+const profile = require("../assets/profile4.png");
 
 export default function About() {
   const [isMounted, setIsMounted] = useState(false);
