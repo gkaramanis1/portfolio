@@ -1,17 +1,9 @@
-import { useState, useEffect } from "react";
 import { Box, Text, Image } from "@chakra-ui/react";
 
 const profile = require("../assets/profile4.png");
 
 export default function About() {
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsMounted(true);
-      window.scrollTo(0, 0);
-    }, 200);
-  }, []);
+  
 
   return (
     <div style={{ textAlign: "center" }}>
@@ -20,12 +12,7 @@ export default function About() {
   display="inline-block"
   mt={8}
   mb={8}
-  style={{
-    transform: isMounted ? "translateY(0)" : "translateY(100%)",
-    opacity: isMounted ? 1 : 0,
-    transition: "transform 2s ease-out, opacity 2s ease-out",
-    transitionDelay: "0.2s"
-  }}
+  
 >
   <Text
     bgGradient="linear(to-l, #ee6c4d, #98c1d9)"
@@ -33,20 +20,12 @@ export default function About() {
     fontSize="5xl"
     fontWeight="extrabold"
     mb={4}
-    style={{
-      opacity: isMounted ? 1 : 0,
-      transition: "transform 2s ease-out, opacity 2s ease-out",
-      transitionDelay: "0.5s"
-    }}
+    
   >
     Hey! I'm George Karamanis
   </Text>
   <Box maxWidth="800px" display="inline-block"
-    style={{
-      opacity: isMounted ? 1 : 0,
-      transition: "transform 2s ease-out, opacity 2s ease-out",
-      transitionDelay: "0.8s"
-    }}
+    
   >
     <Image
   borderRadius="5px"
@@ -64,12 +43,7 @@ export default function About() {
         <p
           className="bio"
           mt={4}
-          style={{
-            opacity: isMounted ? 1 : 0,
-            transform: isMounted ? "translateY(0)" : "translateY(50px)",
-            transition: "opacity 2s ease-out, transform 2s ease-out",
-            transitionDelay: "1.1s"
-          }}
+          
         >
           I'm a problem-solver at heart who thrives in team-oriented
           environments. With a certificate from the coding bootcamp at the
@@ -78,11 +52,7 @@ export default function About() {
           and innovation.
         </p>
 
-        <Box style={{
-          transform: isMounted ? "translateY(0)" : "translateY(100px)",
-          transition: "transform 2s ease-out, opacity 2s ease-out",
-          transitionDelay: "0.8s"
-            }}
+        <Box 
         textAlign="center" mt={10} mb={4}>
           <Text bgGradient="linear(to-l, #ee6c4d, #98c1d9)"
           bgClip="text"
