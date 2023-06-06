@@ -130,7 +130,7 @@ export default function Resume() {
           </ListItem>
         </List>
         <Center mt={10}>
-          <a href={require("../assets/resume1.pdf")} download style={{ textDecoration: "none" }}>
+          <a href={require("../assets/resume.pdf")} download style={{ textDecoration: "none" }}>
             <Heading
               as="h3"
               fontSize={{ base: "lg", md: "xl" }} display="inline-flex" alignItems="center">
