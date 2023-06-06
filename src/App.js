@@ -6,9 +6,8 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
-import { Box, useColorMode, IconButton, ColorModeScript } from '@chakra-ui/react';
+import { Box, ColorModeScript } from '@chakra-ui/react';
 import './App.css';
-import { FaSun, FaMoon } from 'react-icons/fa'
 
 // Dark and Light Mode
 

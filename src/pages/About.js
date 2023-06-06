@@ -69,7 +69,7 @@ export default function About() {
               >
                 👨‍👩‍👧‍👦
               </span>
-              <span>Spending time with my Family</span>
+              <span>Spending time with my family</span>
             </Box>
             <Box display="flex" alignItems="center" mb={2}>
               <span
@@ -109,7 +109,7 @@ export default function About() {
               >
                 🐾
               </span>
-              <span>Hanging out with my Wheaten Terrier</span>
+              <span>Hanging out with my wheaten terrier</span>
             </Box>
           </Box>
         </Box>

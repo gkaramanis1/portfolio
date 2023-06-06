@@ -1,18 +1,33 @@
 import React from 'react';
-import { Flex, Tabs, TabList, Tab } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Button,
+  useColorModeValue,
+  Stack,
+  useColorMode,
+  Tabs,
+  TabList,
+  Tab
+} from '@chakra-ui/react';
+import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
-function NavBar({ currentPage, handlePageChange }) {
+
+
+export default function Navbar({ currentPage, handlePageChange }) {
+  const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <Flex justifyContent="center">
-    <Tabs variant="unstyled" justifyContent="center">
-      <TabList>
+    <>
+      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+        <Tabs>
+        <TabList>
         <Tab
           onClick={() => handlePageChange('About')}
           _selected={{ color: 'blue.500', borderBottomWidth: '2px', borderColor: 'blue.500' }}
           color={currentPage === 'About' ? 'blue.500' : 'gray.500'}
           _hover={{ color: 'blue.500' }}
-          borderBottomWidth={currentPage === 'About' ? '2px' : ''}
-          borderColor={currentPage === 'About' ? 'blue.500' : ''}
+         
         >
           About Me
         </Tab>
@@ -21,8 +36,7 @@ function NavBar({ currentPage, handlePageChange }) {
           _selected={{ color: 'blue.500', borderBottomWidth: '2px', borderColor: 'blue.500' }}
           color={currentPage === 'Portfolio' ? 'blue.500' : 'gray.500'}
           _hover={{ color: 'blue.500' }}
-          borderBottomWidth={currentPage === 'Portfolio' ? '2px' : ''}
-          borderColor={currentPage === 'Portfolio' ? 'blue.500' : ''}
+          
         >
           Portfolio
         </Tab>
@@ -31,16 +45,23 @@ function NavBar({ currentPage, handlePageChange }) {
           _selected={{ color: 'blue.500', borderBottomWidth: '2px', borderColor: 'blue.500' }}
           color={currentPage === 'Resume' ? 'blue.500' : 'gray.500'}
           _hover={{ color: 'blue.500' }}
-          borderBottomWidth={currentPage === 'Resume' ? '2px' : ''}
-          borderColor={currentPage === 'Resume' ? 'blue.500' : ''}
+  
         >
           Resume
         </Tab>
       </TabList>
-    </Tabs>
-    </Flex>
+      </Tabs>
+          <Flex alignItems={'center'}>
+            <Stack direction={'row'} spacing={7}>
+              <Button onClick={toggleColorMode}>
+                {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+              </Button>
+
+              
+            </Stack>
+          </Flex>
+        </Flex>
+      </Box>
+    </>
   );
 }
-
-
-export default NavBar;
