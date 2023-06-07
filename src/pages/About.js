@@ -22,7 +22,7 @@ export default function About() {
     mb={4}
     
   >
-    Hey! I'm George Karamanis
+    George Karamanis
   </Text>
   <Box maxWidth="800px" display="inline-block"
     
