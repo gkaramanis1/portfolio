@@ -1,39 +1,31 @@
-import React, { useState } from 'react';
-import { ChakraProvider } from '@chakra-ui/react';
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
-import About from './pages/About';
-import Portfolio from './pages/Portfolio';
-import Contact from './pages/Contact';
-import Resume from './pages/Resume';
-import { Box, ColorModeScript } from '@chakra-ui/react';
+import React from 'react';
 import './App.css';
+import Nav from './components/NavBar';
+import Header from './components/Hero';
+import About from './pages/About';
+import Projects from './pages/Portfolio';
 
-// Dark and Light Mode
+import Contact from './pages/Contact';
+import Footer from './components/Footer';
 
-export default function App() {
-  const [currentPage, setCurrentPage] = useState('About');
+function App() {
+  // Available Colours:
+  // blue, cyan, gray, green, orange, pink, purple, red, teal, yellow
 
-  const handlePageChange = (page) => setCurrentPage(page);
+  // edit this variable to change the color theme
+  const color = "blue";
 
   return (
     <>
-    <ColorModeScript />
-    <ChakraProvider>
-      
-      <div>
-        <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
-        <Box p={8}>
-          {currentPage === 'About' && <About />}
-          {currentPage === 'Portfolio' && <Portfolio />}
-          {currentPage === 'Resume' && <Resume />}
-          {currentPage === 'Contact' && <Contact />}
-        </Box>
-        <Footer />
-      </div>
-    </ChakraProvider>
+      <Nav color={color} />
+      <Header color={color} />
+      <About color={color} />
+      <Projects color={color} />
+
+      <Contact color={color} />
+      <Footer />
     </>
   );
 }
 
-
+export default App;

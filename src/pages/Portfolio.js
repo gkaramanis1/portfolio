@@ -1,205 +1,95 @@
-import { useState, useEffect } from "react";
-
 import {
-  Card,
-  Image,
-  CardBody,
-  CardFooter,
-  Stack,
-  Heading,
-  Text,
   Divider,
-  ButtonGroup,
-  IconButton,
+  Stack,
+  Text,
+  Container,
+  Box,
+  HStack,
+  Button,
+  Card,
+  CardBody,
+  Image,
+  Heading,
+  Badge,
+
 } from "@chakra-ui/react";
+import { Fade } from "react-awesome-reveal";
 
-import { FaGithub, FaLink } from "react-icons/fa";
+import ProjectsArray from "../components/ProjectsArray";
 
-const Wedding = require("../assets/wedding.jpeg")
-const NoPMS = require("../assets/Screenshot.png");
-const Password = require("../assets/password.png");
-const Schedule = require("../assets/schedule.jpeg");
 
-export default function Portfolio() {
-  const [isMounted, setIsMounted] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsMounted(true);
-      window.scrollTo(0, 0);
-    }, 200);
-  }, []);
+export default function Projects({ color }) {
+    const projects = ProjectsArray();
 
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
+
+  
+    
   return (
-    <div
-    style={{
-        display: "flex",
-        flexDirection: "row",
-        flexWrap: "wrap",
-        margin: "0 auto",
-        width: "100%",
-        maxWidth: "1200px",
-        justifyContent: "center",
-      }}
-    >
-
-<Card
-        style={{
-          transform: isMounted ? "translateY(0)" : "translateY(100px)",
-          opacity: isMounted ? 1 : 0,
-          transition: "transform 2s ease-out, opacity 2s ease-out",
-          transitionDelay: "0.2s",
-        }}
-        maxW="sm"
-        m="2"
-      >
-        <CardBody>
-          <Image src={Wedding} alt="wedding" borderRadius="md" />
-          <Stack mt="6" spacing="3">
-            <Heading size="md">Wedding Website</Heading>
-            <Text>
-            I utilized Python and the Flask framework to develop a website for my upcoming wedding.
-            The RSVP functionality allows the guests to submit their response, allergies, and a note to the couple. I also created a feature that sends a custom text to my cellphone with guests’ response when they RSVP. Lastly, I configured a virtual private server (VPS) as a web server and mail server using Nginx/Postfix. 
-            </Text>
+    <>
+      <Container maxW={"3xl"} id="projects">
+        <Stack
+          as={Box}
+          textAlign={"center"}
+          spacing={{ base: 8, md: 14 }}
+          pb={{ base: 20, md: 36 }}
+        >
+          <Stack align="center" direction="row" p={4}>
+            <HStack mx={4}>
+              <Text color={`${color}.400`} fontWeight={800}>
+                02
+              </Text>
+              <Text fontWeight={800}>Projects</Text>
+            </HStack>
+            <Divider orientation="horizontal" />
           </Stack>
-        </CardBody>
-        <Divider />
-        <CardFooter display="flex" justifyContent="center" alignItems="center">
-          <ButtonGroup spacing="2">
-            <IconButton
-              as="a"
-              href="https://github.com/gkaramanis1/"
-              aria-label="GitHub"
-              icon={<FaGithub fontSize="2rem" />}
-            />
-            <IconButton
-              as="a"
-              href="https://cindygiorgo.com/"
-              aria-label="Link"
-              icon={<FaLink fontSize="2rem" />}
-            />
-          </ButtonGroup>
-        </CardFooter>
-      </Card>
+          <Stack px={4} spacing={4}>
+            {projects.map((project) => (
+              <Fade cascade damping={0.1}>
+                <Card
+                  key={project.name}
+                  direction={{
+                    base: "column",
+                  }}
+                  overflow="hidden"
+                >
+                  <Image objectFit="cover" src={project.image} />
 
-      <Card
-        style={{
-          transform: isMounted ? "translateY(0)" : "translateY(100px)",
-          opacity: isMounted ? 1 : 0,
-          transition: "transform 2s ease-out, opacity 2s ease-out",
-          transitionDelay: "0.2s",
-        }}
-        maxW="sm"
-        m="2"
-      >
-        <CardBody>
-          <Image src={NoPMS} alt="NoPMS" borderRadius="lg" />
-          <Stack mt="6" spacing="3">
-            <Heading size="md">Project Management System</Heading>
-            <Text>
-            This application was created using the MERN Stack. This full functioning web application allows you to manage and organize your GitHub
-              projects. Additionally, you can collaborate with team memebers and
-              stay up to date with the current projects you are working on.
-            </Text>
-          </Stack>
-        </CardBody>
-        <Divider />
-        <CardFooter display="flex" justifyContent="center" alignItems="center">
-          <ButtonGroup spacing="2">
-            <IconButton
-              as="a"
-              href="https://github.com/Ale-Miret/NoPMS"
-              aria-label="GitHub"
-              icon={<FaGithub fontSize="2rem" />}
-            />
-            <IconButton
-              as="a"
-              href="https://calm-waters-92102.herokuapp.com/"
-              aria-label="Link"
-              icon={<FaLink fontSize="2rem" />}
-            />
-          </ButtonGroup>
-        </CardFooter>
-      </Card>
+                  <Stack>
+                    <CardBody align="left">
+                      <Heading size="md">{project.name}</Heading>
 
-      <Card
-        style={{
-          transform: isMounted ? "translateY(0)" : "translateY(100px)",
-          opacity: isMounted ? 1 : 0,
-          transition: "transform 2s ease-out, opacity 2s ease-out",
-          transitionDelay: "0.5s",
-        }}
-        maxW="sm"
-        m="2"
-      >
-        <CardBody>
-          <Image src={Password} alt="Password Generator" borderRadius="lg" />
-          <Stack mt="6" spacing="3">
-            <Heading size="md">Password Generator</Heading>
-            <Text>Simple JavaScript application that generates a random password.</Text>
-          </Stack>
-        </CardBody>
-        <Divider />
-        <CardFooter display="flex" justifyContent="center" alignItems="center">
-          <ButtonGroup spacing="2">
-            <IconButton
-              as="a"
-              href="https://github.com/gkaramanis1/password-gen"
-              aria-label="GitHub"
-              icon={<FaGithub fontSize="2rem" />}
-            />
-            <IconButton
-              as="a"
-              href="https://gkaramanis1.github.io/password-generator/"
-              aria-label="Link"
-              icon={<FaLink fontSize="2rem" />}
-            />
-          </ButtonGroup>
-        </CardFooter>
-      </Card>
+                      <Text py={2}>{project.description}</Text>
 
-      <Card
-        style={{
-          transform: isMounted ? "translateY(0)" : "translateY(100px)",
-          opacity: isMounted ? 1 : 0,
-          transition: "transform 2s ease-out, opacity 2s ease-out",
-          transitionDelay: "0.8s",
-        }}
-        maxW="sm"
-        m="2"
-      >
-        <CardBody>
-          <Image
-            src={Schedule}
-            alt="Green double couch with wooden legs"
-            borderRadius="lg"
-          />
-          <Stack mt="6" spacing="3">
-            <Heading size="md">Work Day Scheduler</Heading>
-            <Text>Simple JavaScript application that allows the users to create an hourly schedule for the current day.</Text>
+                      <HStack py={2}>
+                        {project.buttons.map((button) => (
+                          <a key={button.text} href={button.href}>
+                            <Button color={`${color}.400`}>
+                              {button.text}
+                            </Button>
+                          </a>
+                        ))}
+                      </HStack>
+                      <HStack pt={4} spacing={2}>
+                        {project.badges.map((badge) => (
+                          <Badge
+                            key={badge.text}
+                            colorScheme={badge.colorScheme}
+                          >
+                            {badge.text}
+                          </Badge>
+                        ))}
+                      </HStack>
+                    </CardBody>
+                  </Stack>
+                </Card>
+              </Fade>
+            ))}
           </Stack>
-        </CardBody>
-        <Divider />
-        <CardFooter display="flex" justifyContent="center" alignItems="center">
-          <ButtonGroup spacing="2">
-            <IconButton
-              as="a"
-              href="https://github.com/gkaramanis1/day-scheduler"
-              aria-label="GitHub"
-              icon={<FaGithub fontSize="2rem" />}
-            />
-            <IconButton
-              as="a"
-              href="https://gkaramanis1.github.io/day-scheduler/"
-              aria-label="Link"
-              icon={<FaLink fontSize="2rem" />}
-            />
-          </ButtonGroup>
-        </CardFooter>
-      </Card>
-    </div>
+          
+          
+        </Stack>
+      </Container>
+    </>
   );
 }
