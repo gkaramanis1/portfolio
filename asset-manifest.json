@@ -1,21 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.09eb8add.css",
-    "main.js": "/static/js/main.97da7485.js",
+    "main.js": "/static/js/main.b8435de8.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/password.png": "/static/media/password.e960e34adb6f7084adfc.png",
-    "static/media/Screenshot.png": "/static/media/Screenshot.7a95c2b4ed11392bf372.png",
-    "static/media/profile4.png": "/static/media/profile4.b2ced2f62081d2562f33.png",
-    "static/media/wedding.jpeg": "/static/media/wedding.bb9b559f9e8c6cc62ab5.jpeg",
-    "static/media/resume.pdf": "/static/media/resume.9cdd55c4e5972e350cc4.pdf",
-    "static/media/schedule.jpeg": "/static/media/schedule.49f43c4c27456c8af945.jpeg",
+    "static/media/Subject.png": "/static/media/Subject.73c671bee34a74b507d0.png",
     "index.html": "/index.html",
     "main.09eb8add.css.map": "/static/css/main.09eb8add.css.map",
-    "main.97da7485.js.map": "/static/js/main.97da7485.js.map",
+    "main.b8435de8.js.map": "/static/js/main.b8435de8.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.09eb8add.css",
-    "static/js/main.97da7485.js"
+    "static/js/main.b8435de8.js"
   ]
 }
