@@ -1,5 +1,5 @@
 ## Fantasy Premier League Tracker
-Flask application that predicts the best fantasy premier league (FPL) picks for the upcoming gameweek based on OLS multiple regression model. Utilizes the FPL API to collect player and fixture data.
+Flask application that predicts the best Fantasy Premier League (FPL) picks for the upcoming gameweek based on OLS multiple regression model. Utilizes the FPL API to collect player and fixture data.
 - ![password](../assets/fpl1.png)
 - Tags: Category 1
 - Badges:
@@ -15,7 +15,7 @@ Flask application that predicts the best fantasy premier league (FPL) picks for 
   - Live Site [https://fplanalyzer.r5jhhcf56mj9i.us-east-2.cs.amazonlightsail.com/]
 
 ## Wedding Website
-I utilized Python and the Flask framework to develop a website for my upcoming wedding.The RSVP functionality allows the guests to submit their response, allergies, and a note to the couple. I also created a feature that sends a custom text to my cellphone with guests’ response when they RSVP. Lastly, I configured a virtual private server (VPS) as a web server and mail server using Nginx/Postfix.
+I utilized Python and the Flask framework to develop a website for my upcoming wedding. The RSVP functionality allows the guests to submit their response, allergies, and a note to the couple. I also created a feature that sends a custom text to my cellphone with guests’ response when they RSVP. Lastly, I configured a virtual private server (VPS) as a web server and mail server using Nginx/Postfix.
 - ![wedding](../assets/wedding.jpeg)
 - Tags: Category 2
 - Badges:
