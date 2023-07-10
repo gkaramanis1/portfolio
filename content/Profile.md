@@ -7,7 +7,7 @@
 - ![profile](../assets/profile2.jpeg)
 
 ## About
-I'm a problem-solver at heart who thrives in team-oriented environments. With a certificate from the coding bootcamp at the University of Central Florida, I bring a unique perspective to full-stack web development that emphasizes creativity, collaboration, and innovation.
+I'm a problem-solver at heart who thrives in team-oriented environments. I bring a unique perspective to full-stack web development that emphasizes creativity, collaboration, and innovation.
 
 ## Contact
 
