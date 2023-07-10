@@ -13,6 +13,8 @@ Flask application that predicts the best Fantasy Premier League (FPL) picks for 
   - GitHub Actions [purple]
 - Buttons:
   - Live Site [https://fplanalyzer.r5jhhcf56mj9i.us-east-2.cs.amazonlightsail.com/]
+  - GitHub [https://github.com/gkaramanis1/fpl]
+
 
 ## Wedding Website
 I utilized Python and the Flask framework to develop a website for my upcoming wedding. The RSVP functionality allows the guests to submit their response, allergies, and a note to the couple. I also created a feature that sends a custom text to my cellphone with guests’ response when they RSVP. Lastly, I configured a virtual private server (VPS) as a web server and mail server using Nginx/Postfix.
@@ -22,8 +24,12 @@ I utilized Python and the Flask framework to develop a website for my upcoming w
   - Python [blue]
   - Flask [gray]
   - MySQL [orange]
+  - Nginx [green]
+  - Postfix [gray]
+  - Bootstrap [purple]
 - Buttons:
   - Live Site [https://cindygiorgo.com]
+  - GitHub [https://github.com/gkaramanis1/wedding]
 
 ## Project Management System
 This application was created using the MERN Stack. This full functioning web application allows you to manage and organize your GitHub projects. Additionally, you can collaborate with team memebers and stay up to date with the current projects you are working on.
@@ -32,8 +38,10 @@ This application was created using the MERN Stack. This full functioning web app
 - Badges:
   - JavaScript [yellow]
   - MongoDB [green]
+  - React [blue]
 - Buttons:
   - Live Site [https://calm-waters-92102.herokuapp.com/]
+  - GitHub [https://github.com/gkaramanis1/NoPMS/tree/main]
 
 ## Password Generator
 Simple JavaScript application that generates a random password.
@@ -45,6 +53,7 @@ Simple JavaScript application that generates a random password.
   - CSS [blue]
 - Buttons:
   - Live Site [https://gkaramanis1.github.io/password-generator/]
+  - GitHub [https://github.com/gkaramanis1/password-generator]
 
 ## Work Day Scheduler
 Simple JavaScript application that allows the user to create an hourly schedule for the current day.
@@ -56,5 +65,6 @@ Simple JavaScript application that allows the user to create an hourly schedule 
   - CSS [blue]
 - Buttons:
   - Live Site [https://gkaramanis1.github.io/day-scheduler/]
+  - GitHub [https://github.com/gkaramanis1/day-scheduler]
 
 
