@@ -11,6 +11,8 @@ import {
   Image,
   Heading,
   Badge,
+  Wrap,
+  WrapItem
 
 } from "@chakra-ui/react";
 import { Fade } from "react-awesome-reveal";
@@ -71,14 +73,13 @@ export default function Projects({ color }) {
                         ))}
                       </HStack>
                       <HStack pt={4} spacing={2}>
+                      <Wrap>
                         {project.badges.map((badge) => (
-                          <Badge
-                            key={badge.text}
-                            colorScheme={badge.colorScheme}
-                          >
-                            {badge.text}
-                          </Badge>
-                        ))}
+                          <WrapItem key={badge.text}>
+                            <Badge colorScheme={badge.colorScheme}>{badge.text}</Badge>
+                          </WrapItem>
+                          ))}
+                      </Wrap>
                       </HStack>
                     </CardBody>
                   </Stack>
