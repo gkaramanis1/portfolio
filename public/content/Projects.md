@@ -32,7 +32,7 @@ I utilized Python and the Flask framework to develop a website for my upcoming w
   - GitHub [https://github.com/gkaramanis1/wedding]
 
 ## Project Management System
-This application was created using the MERN Stack. This full functioning web application allows you to manage and organize your GitHub projects. Additionally, you can collaborate with team memebers and stay up to date with the current projects you are working on.
+This application was created using the MERN Stack. This full functioning web application allows you to manage and organize your GitHub projects. Additionally, you can collaborate with team members and stay up to date with the current projects you are working on.
 - ![screenshot](../assets/Screenshot.png)
 - Tags: Category 3
 - Badges:
